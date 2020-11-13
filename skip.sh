@@ -6,5 +6,4 @@ for folder in "${folders[@]}"; do
     if [[ "${folder}" =~ $FILE_PATTERN ]]; then exit 1; fi
 done
 
-echo "Skipping next command"
 exit 0
