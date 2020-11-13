@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Changed folders:"
+git diff-tree --no-commit-id --name-only master..HEAD
+
 folders=(`git diff-tree --no-commit-id --name-only master..HEAD`)
 
 for folder in "${folders[@]}"; do
